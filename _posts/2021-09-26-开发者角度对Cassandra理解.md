@@ -17,7 +17,7 @@ create table test_table {
 问题抛出来了。 接下来，进入正题，来看看原因。
 
 ## 数据模型
-![Cassandra DM](/assets/images/CassandraDM.png)
+![Cassandra DM](/assets/images/CassandraDm.png)
 
 一条数据在Cassandra中的逻辑结构如图所示。它包含一个分区键，若干个集群键和静态列。分区键是
 必须分配的，它决定了一条数据的唯一性。集群键和静态列是可选的，有助于提高数据查询性能。
